@@ -39,11 +39,10 @@ function renderModal(projId) {
         <h2>${proj.name}</h2>
         <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
         <img class="img-fluid d-block mx-auto" src="img/me/${proj.id}.png" alt="">
-        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
-        maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+        <p>${proj.desc}</p>
         <ul class="list-inline">
-        <li>Date: January 2017</li>
-        <li>Client: ${proj.name}</li>
+        <li>Date: ${proj.publishedAt}</li>
+        <li>Game: ${proj.name}</li>
         <li>title: ${proj.title}</li>
         <li><a href="${proj.projUrl}">Link:${proj.projUrl}</a></li>
         </ul>
