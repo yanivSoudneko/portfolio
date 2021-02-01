@@ -83,7 +83,7 @@ body {
     right: 3%;
     height: 50px;
     width: 50px;
-    background: #e2cb36;
+    background: #78c2d8;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -162,7 +162,7 @@ body {
 }
 
 #mainNav .navbar-brand {
-    color: #fed136;
+    color: #78c2d8;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
@@ -170,7 +170,7 @@ body {
 #mainNav .navbar-brand:active,
 #mainNav .navbar-brand:focus,
 #mainNav .navbar-brand:hover {
-    color: #fec503;
+    color: #78c2d8;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -185,7 +185,7 @@ body {
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fed136;
+    color: #78c2d8;
 }
 
 @media (min-width: 992px) {

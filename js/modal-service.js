@@ -33,7 +33,7 @@ function getProjects() {
     return gProjects
 }
 
-function updateModal(projId) {
+function getProjById(projId) {
     var proj = gProjects.find(function(proj) {
         return proj.id === projId
     })

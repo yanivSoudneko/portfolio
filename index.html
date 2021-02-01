@@ -8,13 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Coding Academy</title>
+    <title>Yaniv's portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/939f1d3268.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -83,7 +83,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Yaniv's portfolio</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
@@ -99,7 +99,7 @@
                         <a class="nav-link js-scroll-trigger" href="#me">Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                        <a class="nav-link js-scroll-trigger" onClick="openCanvas()">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -112,7 +112,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To my Portfolio</div>
                 <div class="intro-heading">It's Nice To Meet You</div>
-                <a class=" btn btn-outline-warning " href="#services">Tell Me More</a>
+                <a class=" btn btn-outline-info " href="#services">Tell Me More</a>
             </div>
         </div>
     </header>
@@ -129,24 +129,24 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                           <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                           <i class="fa fa-square fa-stack-2x text-info"></i>
+                           <i class="fa fa-html5 fa-stack-1x fa-inverse"></i>
                      </span>
                     <h4 class="service-heading">HTML</h4>
                     <p class="text-muted">Live and responds pages for all your devices, made with love and big passion!</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-square fa-stack-2x text-info"></i>
+              <i class="fa fa-css3 fa-stack-1x fa-inverse"></i>
             </span>
                     <h4 class="service-heading">CSS</h4>
                     <p class="text-muted">knowledge in the perfect world of css with alot of features color and style for your pages</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+              <i class="fa fa-square fa-stack-2x text-info"></i>
+              <i class="fab fa-js fa-stack-1x fa-inverse"></i>
             </span>
                     <h4 class="service-heading">JS</h4>
                     <p class="text-muted">Coding with Vanilla JS building html css and JS board games,with alot of opetions and features</p>
@@ -156,18 +156,20 @@
     </section>
 
     <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Yaniv's Project's</h3>
+    <article id="presentation">
+        <section class="bg-light" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Portfolio</h2>
+                        <h3 class="section-subheading text-muted">Yaniv's Project's</h3>
+                    </div>
+                </div>
+                <div class="row main-row">
                 </div>
             </div>
-            <div class="row main-row">
-            </div>
-        </div>
-    </section>
+        </section>
+    </article>
 
 
     <!-- Me -->
@@ -180,8 +182,8 @@
                     <p class="text-muted">Full Stack Developer</p>
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fa fa-twitter"></i>
+                            <a href="https://github.com/yanivSoudneko" target="_blank">
+                                <i class="fa fa-github"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
@@ -198,7 +200,7 @@
                 </div>
             </div>
             <div class="col-sm-8 flex-align-center">
-                <p class="large text-muted  about-description">Greetings,Welcome to my portfolio. I am Yaniv Soudneko 23 years old,<br/>born and grow at Ashdod,Israel, and study to become Full stack developer</p>
+                <p class="large text-muted  about-description">Greetings,Welcome to my portfolio. I am Yaniv Soudneko 23 years old,<br/>born and raised at Ashdod,Israel, and study to become Full stack developer</p>
             </div>
         </div>
     </section>
@@ -217,7 +219,7 @@
                     <ul class="list-inline social-buttons flex-align-center">
                         <li class="list-inline-item">
                             <a href="#">
-                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-github"></i>
                             </a>
                         </li>
                         <li class="list-inline-item flex-align-center">
