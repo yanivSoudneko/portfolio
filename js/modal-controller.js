@@ -58,10 +58,13 @@ function renderModal(projId) {
 }
 
 function mailMe() {
+
     var subject = document.querySelector('input[name=subject]').value
-    var body = document.querySelector('textarea[name=body]').value
+    var body = document.querySelector('textarea[name=body]').value.replace(/\n/g, `%0d%0a`)
     var mail = document.querySelector('input[name=email]').value
+        // console.log(document.querySelector('textarea[name=body]').innerHTML);
+        // console.log('mixedBody', mixedBody);
         // console.log(subject, body, mail);
-    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=soudneko@icloud.com&su=${subject}&body=${body+mail}`)
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=soudneko@icloud.com&su=${subject}&body=${body}`)
 
 }
