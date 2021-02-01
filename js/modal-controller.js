@@ -38,19 +38,19 @@ function renderModal(projId) {
     var strHtml = ` 
       <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                <h2>${proj.name}</h2>
-                <p class="item-intro text-muted">${proj.title}</p>
-                <img class="img-fluid d-block mx-auto" src="img/me/${proj.id}.png" alt="">
-                <p>${proj.desc}</p>
-                <ul class="list-inline">
-                <li>Date: ${proj.publishedAt}</li>
-                <li>Game: ${proj.name}</li>
-                <li>title: ${proj.title}</li>
-                <li><button class="btn btn-info lets-play"><a href="${proj.projUrl}" target="_blank">Lets play</a></button></li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                <i class="fa fa-times"></i>
-                Close Project</button>
+                    <h2>${proj.name}</h2>
+                    <p class="item-intro text-muted">${proj.title}</p>
+                    <img class="img-fluid d-block mx-auto" src="img/me/${proj.id}.png" alt="">
+                    <p>${proj.desc}</p>
+                    <ul class="list-inline">
+                        <li>Date: ${proj.publishedAt}</li>
+                        <li>Game: ${proj.name}</li>
+                        <li>title: ${proj.title}</li>
+                        <li><button class="btn btn-info lets-play"><a href="${proj.projUrl}" target="_blank">Lets play</a></button></li>
+                    </ul>
+                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
                 </div>
         </div>`
     getProjById(projId)

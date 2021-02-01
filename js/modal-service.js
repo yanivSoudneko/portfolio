@@ -27,7 +27,7 @@ var gProjects = [{
     publishedAt: ' january 28,2021',
     labels: ["Matrixes", "keyboard events"],
 
-}, ]
+}]
 
 function getProjects() {
     return gProjects
