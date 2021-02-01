@@ -71,7 +71,7 @@ function renderModal(projId) {
         <li>Date: January 2017</li>
         <li>Client: ${proj.name}</li>
         <li>title: ${proj.title}</li>
-        <li><a>Link:${proj.projUrl}</a></li>
+        <li><a href="${proj.projUrl}">Link:${proj.projUrl}</a></li>
         </ul>
         <button class="btn btn-primary" data-dismiss="modal" type="button">
         <i class="fa fa-times"></i>
