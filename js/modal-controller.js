@@ -1,33 +1,6 @@
 'use strict'
 
-var gProjects = [{
-    id: "pacman",
-    name: "Pacman",
-    title: "I am gonna eat you",
-    desc: "lorem ipsum lorem ipsum lorem ipsum",
-    projUrl: "https://yanivsoudneko.github.io/Pacman/.",
-    publishedAt: 1448693940000,
-    labels: ["Matrixes", "keyboard events"],
 
-}, {
-    id: "minesweeper",
-    name: "MineSweeper",
-    title: "Take care ,Mines is every where",
-    desc: "lorem ipsum lorem ipsum lorem ipsum",
-    projUrl: "https://yanivsoudneko.github.io/Sprint1/",
-    publishedAt: 1448693940000,
-    labels: ["Matrixes", "keyboard events"],
-
-}, {
-    id: "bookshop",
-    name: "BookShop",
-    title: "Train your brain",
-    desc: "lorem ipsum lorem ipsum lorem ipsum",
-    projUrl: "https://yanivsoudneko.github.io/Bookshop/.",
-    publishedAt: 1448693940000,
-    labels: ["Matrixes", "keyboard events"],
-
-}, ]
 $(document).ready(init);
 
 function init() {
@@ -35,10 +8,11 @@ function init() {
     renderProj()
 }
 
-console.log('projects', gProjects);
+console.log('projects', getProjects());
 
 function renderProj() {
-    var strHTMLs = gProjects.map(function(proj) {
+    var projects = getProjects()
+    var strHTMLs = projects.map(function(proj) {
         return `   <div class="col-md-4 col-sm-6 portfolio-item" onclick="renderModal('${proj.id}')">
         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
@@ -81,4 +55,13 @@ function renderModal(projId) {
     console.log('projId', proj);
     updateModal(projId)
     document.querySelector('.modal-row').innerHTML = strHtml
+}
+
+function mailMe() {
+    var SUBJECT = document.querySelector('input[name=subject]').value
+    var BODY = document.querySelector('textarea[name=body]').value
+    var MAIL = document.querySelector('input[name=email]').value
+        // console.log(subject, body, mail);
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=soudneko@icloud.com&su=${SUBJECT}&body=${BODY+MAIL}`)
+
 }

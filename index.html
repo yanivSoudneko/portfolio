@@ -49,28 +49,27 @@
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
                                 </div>
-                            </div>
-                            <div class="form-group">
+
                                 <label class="control-label col-sm-2" for="lname">Last Name:</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
                                 </div>
-                            </div>
-                            <div class="form-group">
+
                                 <label class="control-label col-sm-2" for="email">Email:</label>
                                 <div class="col-sm-10">
                                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                                 </div>
-                            </div>
-                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="subject">subject:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="subject" placeholder="Type subject here" name="subject" required>
+                                </div>
                                 <label class="control-label col-sm-2" for="comment">Comment:</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" rows="5" id="comment" required></textarea>
+                                    <textarea class="form-control" rows="5" id="comment" name="body" required></textarea>
                                 </div>
-                            </div>
-                            <div class="form-group">
+
                                 <div class="col-sm-offset-2 col-sm-10">
-                                    <button type="button" class="btn btn-primary">Submit</button>
+                                    <button type="button" class="btn btn-primary" onclick="mailMe()">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -130,9 +129,9 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-            </span>
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                     </span>
                     <h4 class="service-heading">E-Commerce</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
@@ -166,7 +165,6 @@
                 </div>
             </div>
             <div class="row main-row">
-
             </div>
         </div>
     </section>
