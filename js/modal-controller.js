@@ -1,6 +1,6 @@
 'use strict'
 
-var projects = [{
+var gProjects = [{
     id: "pacman",
     name: "Pacman",
     title: "I am gonna eat you",
@@ -10,7 +10,7 @@ var projects = [{
     labels: ["Matrixes", "keyboard events"],
 
 }, {
-    id: "mineSweeper",
+    id: "minesweeper",
     name: "MineSweeper",
     title: "Take care ,Mines is every where",
     desc: "lorem ipsum lorem ipsum lorem ipsum",
@@ -35,11 +35,11 @@ function init() {
     renderProj()
 }
 
-console.log('projects', projects);
+console.log('projects', gProjects);
 
 function renderProj() {
-    var strHTMLs = projects.map(function(proj) {
-        return `   <div class="col-md-4 col-sm-6 portfolio-item" onclick="renderModal(this)">
+    var strHTMLs = gProjects.map(function(proj) {
+        return `   <div class="col-md-4 col-sm-6 portfolio-item" onclick="renderModal('${proj.id}')">
         <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
             <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -58,11 +58,11 @@ function renderProj() {
 }
 
 
-function renderModal() {
-    var strHtml = projects.map(function(proj) {
-        return ` <div class="col-lg-8 mx-auto">
+function renderModal(projId) {
+    var proj = updateModal(projId)
+    var strHtml = ` <div class="col-lg-8 mx-auto">
         <div class="modal-body">
-        <h2>${projects.name}</h2>
+        <h2>${proj.name}</h2>
         <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
         <img class="img-fluid d-block mx-auto" src="img/me/${proj.id}.png" alt="">
         <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate,
@@ -78,6 +78,7 @@ function renderModal() {
         Close Project</button>
         </div>
         </div>`
-    })
+    console.log('projId', proj);
+    updateModal(projId)
     document.querySelector('.modal-row').innerHTML = strHtml
 }
