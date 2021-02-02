@@ -2,6 +2,8 @@
 
 
 $(document).ready(init);
+$('.offcanvas-btn,.getInContact').click(openCanvas)
+$('.submit-btn').click(mailMe)
 
 function init() {
     console.log('Started...');
@@ -18,7 +20,7 @@ function renderProj() {
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
                 <div class="portfolio-hover">
                     <div class="portfolio-hover-content">
-                        <i class="fa fa-plus fa-3x"></i>
+                        <i class="fab fa-angrycreative fa-3x"></i>
                     </div>
                 </div>
                 <img class="img-fluid" src="img/me/${proj.id}.png" alt="">
@@ -63,3 +65,4 @@ function mailMe() {
     window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=soudneko@icloud.com&su=${subject}&body=${body}`)
 
 }
+``
